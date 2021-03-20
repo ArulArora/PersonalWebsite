@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experience - Arul Arora</title>
+	<link rel="stylesheet" type="text/css" href="ExperienceStyleSheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1 id="logo1">AA</h1>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn"> 
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a id="experience" href="experience.html">Experience</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Resume.pdf" target="_blank">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="experience">
+		<h1>Experience</h1>
+		<hr>
+		<p>Being in a cooperative educational university program, I have the opportunity to be in the workforce every other four months. I love to take on new innovating opportunities to apply my skills in a professional environment and develop myself as an engineer. Here are my past coop positions as well as other experience I have been able to take part in.</p>
+	</div>
+
+	<div class="slideshow">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+
+			<div class="slide first">
+				<a href="#BWXT"><img src="BWXT.jpg"></a>
+			</div>
+
+			<div class="slide">
+				<a href="#Waterloop"><img src="Waterloop.png"></a>
+			</div>
+
+			<div class="slide">
+				<a href="#Swimming"><img src="Milton.png"></a>
+			</div>
+
+			<div class="slide">
+				<a href="#Karate"><img src="Griffin.png"></a>
+			</div>
+		
+			<div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+			</div>
+		</div>
+
+		<div class="navigation-manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var counter = 2;
+		setInterval(function() {
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 4) {
+				counter = 1;
+			}
+		}, 3000);
+	</script>
+
+	<div class="experience-page">
+		<div id="BWXT" class="BWXT">
+			<div class="experience-text">
+				<h1>Process Engineer Co-op Student - <a href="https://www.bwxt.com/" target="_blank">BWXT</a></h1>
+				<hr>
+				<ul>
+					<li>In my first co-op I collected data to assist in a $140-million contract nuclear project</li>
+					<li>This massive nuclear project involved shifting off balanced fuel channels back into place in Bruce Power's Unit 3 nuclear reactor</li>
+					<li>The software we used to collect data was made in excel and I had the opportunity to help develop it using VBA</li>
+					<li>Extensive preparation and data analysis was needed before fuel channel shifting to ensure everything ran optimally (Each minute the data helped save, Bruce Power got back $2000 for the reactor being powered back on)</li>
+				</ul>
+				<h2>January 2021 - April 2021</h2>
+			</div>
+			<img src="bwxtphoto.jpeg">
+		</div>
+
+		<div id="Waterloop" class="Waterloop">
+			<div class="experience-text">
+				<h1>Hyperloop Motor Developer - <a href="https://teamwaterloop.ca/" target="_blank">Waterloop</a></h1>
+				<hr>
+				<ul>
+					<li>To keep myself busy when I have some spare time, I am currently on a university design team that is designing and constructing a hyperloop that will revolutionize the future of transportation</li>
+					<li>My role on this team is to help develop the linear induction motor (LIM) used to propel and levitate the hyperloop pod</li>
+					<li>I help test the properties of multiple linear induction motor designs using actual prototypes we develop and a software called COMSOL Multiphysics</li>
+					<li>We use SolidWorks to model the motors and other required devices</li>
+					<li>The overall hyperloop our team designs is put to the test in annual SpaceX competitions</li>
+				</ul>
+				<h2>January 2021 - Present</h2>
+			</div>
+			<img src="waterloopphoto.jpg">
+		</div>
+
+		<div id="Swimming" class="Swimming">
+			<div class="experience-text">
+				<h1>Swimming Instructor - <a href=https://www.milton.ca/en/index.aspx target="_blank">Town of Milton</a></h1>
+				<hr>
+				<ul>
+					<li>While studying in high school I worked part time as a swimming instructor</li>
+					<li>Each shift I taught 8 classes either with 5 to 10 students or 1 student who required special assistance</li>
+					<li>After teaching the classes 10 times, I wrote personalized report cards for each student using the spreadsheets I created for each class</li>
+					<li>I was also required to publicize safety standards to everyone in and around the pool and be ready to support in any injuries/accidents that could occur</li>
+				</ul>
+				<h2>August 2018 - March 2020</h2>
+			</div>
+			<img src="swimmingphoto.jpg">
+		</div>
+
+		<div id="Karate" class="Karate">
+			<div class="experience-text">
+				<h1>Karate Assistant Instructor - <a href=https://www.fightinggriffin.com/ target="_blank">Fighting Griffin</a></h1>
+				<hr>
+				<ul>
+					<li>During my 13 year long journey to obtain my black belt in Gōjū-ryū karate, I had the opportunity to help the higher ranked black belts teach classes</li>
+					<li>I taught classes of 25 students and helped develop their karate techniques</li>
+					<li>Whenever possible, I taught students individually to improve spefic areas that needed extra help</li>
+					<li>Additionally, I helped organize and run club wide events such as parties, summer camps, and karate tournaments</li>
+				</ul>
+				<h2>October 2016 - March 2020</h2>
+			</div>
+			<img src="karatephoto.jpg">
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<h1 id="logo2">AA</h1>
+		<hr>
+		<ul class="icons">
+			<li><a href="https://www.instagram.com/arulxrora/" target="_blank"><img src="instagram.png"></a></li>
+			<li><a href="https://www.facebook.com/arulxrora/" target="_blank"><img src="facebook.png"></a></li>
+			<li><a href="contact.html"><img src="message.png"></a></li>
+			<li><a href="https://www.linkedin.com/in/arularora/" target="_blank"><img src="linkedin.png"></a></li>
+			<li><a href="https://github.com/ArulArora" target="_blank" id="git"><img src="github.png"></a></li>
+		</ul>
+		<p id="stamp">Developed and designed by Arul Arora · Made with HTML and CSS</p>
+	</div>
+
+</body>
+</html>
