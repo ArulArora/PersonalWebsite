@@ -91,7 +91,7 @@ navLogo.addEventListener('click', function () {
 document.querySelector('.nav__links').addEventListener('click', function (e) {
 
     //Matching strategy - only select the nav link elements when this event occurs
-    if (e.target.classList.contains('nav__link') && !e.target.classList.contains('nav__resume')) {
+    if (e.target.classList.contains('nav__link') && !e.target.classList.contains('nav__resume') && !e.target.classList.contains('nav__blog')) {
         e.preventDefault();
         const id = e.target.getAttribute('href');
         document.querySelector(id).scrollIntoView({ behavior: 'smooth' });

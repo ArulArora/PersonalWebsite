@@ -38,7 +38,7 @@ body {
     color: var(--colour-accent-darker);
     font-weight: 1500;
     font-size: 1.6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     
     max-width: 90%;
 }
@@ -85,8 +85,6 @@ body {
     color: var(--colour-accent-darker);
 }
 
-
-
 /* NAVIGATION */
 
 .nav {
@@ -128,7 +126,7 @@ body {
     padding: 0.85rem 2.85rem;
     border-radius: 10rem;
     cursor: pointer;
-    transition: all 0.3s
+    transition: all 0.3s;
 }
 
 .nav__btn:hover {
@@ -287,7 +285,7 @@ body {
 
 .experience {
     background-color: var(--colour-tertiary);
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 .experience__tab-container {
@@ -362,6 +360,33 @@ body {
     margin: auto;
 }
 
+/* BLOG */
+#section--blog {
+    padding-bottom: 12rem;
+    background-color: var(--colour-tertiary);
+}
+
+.blog__text {
+    margin-bottom: 2.5rem;
+}
+
+.blog__images {
+    text-align: center;
+}
+
+.blog__image {
+    opacity: 100%;
+    width: 28rem;
+    margin: 0.2rem 0.3rem;
+    transition: opacity 0.3s;
+}
+
+.blog__image:hover {
+    opacity: 60%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
 /* FOOTER */
 
 .section--footer {
@@ -369,9 +394,9 @@ body {
 }
 
 .footer__header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: white;
-    padding: 5rem 8rem 2rem 8rem;
+    padding: 7rem 8rem 2rem 8rem;
     text-align: center;
 }
 
@@ -379,6 +404,7 @@ body {
     color: #444;
     margin: 4rem;
     font-size: 1.3rem;
+    transition: all 0.3s;
 }
 
 .footer__logo {
@@ -496,6 +522,7 @@ body {
     color: #444;
     width: 25%;
     margin: 0.8rem auto;
+    transition: all 0.3s;
 }
 
 .btn--close-modal {
