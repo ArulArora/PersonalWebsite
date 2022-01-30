@@ -2,11 +2,78 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <title>Arul Arora</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="style-blog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <nav class="nav">
+        <a class="nav__logolink" href="blog.html">
+            <img class="nav__back" src="images/backarrow.png">
+        </a>
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__btn nav__link btn--show-modal">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
+    <div class="section">
+        <h1 class="article__title">YouTube's Success and how it can Continue</h1>
+        <p class="article__paragraph">Coming Soon!</p>
+    </div>
+
+    <section class="section--footer">
+        <h1 class="footer__logo">AA</h1>
+        <hr class="footer__line">
+        </div>
+        <div class="footer__icons">
+            <ul>
+                <li class="footer__icons--item"><a href="https://www.linkedin.com/in/arularora/" target="_blank"><img
+                            src="images/linkedin.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://github.com/ArulArora" target="_blank" id="git"><img
+                            src="images/github.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://www.facebook.com/arulxrora/" target="_blank"><img
+                            src="images/facebook.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://www.instagram.com/arulxrora/" target="_blank"><img
+                            src="images/instagram.png" class="footer__icons--icon"></a></li>
+            </ul>
+        </div>
+        <p class="footer__stamp">Designed and developed by Arul Arora using HTML, CSS and JavaScript.</p>
+    </section>
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">Let's talk!</h2>
+        <form class="modal__form" name="Contact" method="post" data-netlify="true">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" required>
+
+            <label for="Message">Message:</label>
+            <textarea name="Message" rows="6" maxlength="3000" placeholder="Hey! How's it going?" required></textarea>
+
+            <button type="submit" class="btn modal__button">Send Message</button>
+        </form>
+    </div>
+
+    <div class="overlay hidden"></div>
 </body>
 
 </html>

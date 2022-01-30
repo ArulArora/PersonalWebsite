@@ -27,7 +27,7 @@ body {
     align-items: center;
     max-width: 90%;
     margin: auto;
-    padding: 9rem 6rem 5rem 6rem;
+    padding: 10rem 6rem 5rem 6rem;
 }
 
 .section--hidden {
@@ -95,10 +95,6 @@ body {
     width: 100%;
     height: 12vh;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.95);
-}
-
-.nav.sticky {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.95);
 }
@@ -111,6 +107,13 @@ body {
     transition: all 0.3s;
     color: #444;
     margin-left: 2.8rem;
+}
+
+.nav__back {
+    display: flex;
+    width: 30%;
+    margin-left: 2.8rem;
+    transition: all 0.3s;
 }
 
 .nav__logolink {
@@ -154,27 +157,378 @@ body {
     transition: all 0.3s;
 }
 
-.nav__burger {
-    display: none;
-    z-index: 4;
+/* BLOG */
+
+.blog__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.nav__burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #444;
-    margin: 5px;
-    transition: all 0.3s ease;
+.blog__text {
+    margin-bottom: 2.5rem;
 }
 
-.nav__toggle .nav__burger--line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
+.blog__images {
+    text-align: center;
+    margin-bottom: 10rem;
 }
 
-.nav__toggle .nav__burger--line2 {
+.blog__image {
+    opacity: 100%;
+    width: 30rem;
+    margin: 0.4rem 0.65rem;
+    transition: opacity 0.3s;
+}
+
+.blog__image:hover {
+    opacity: 60%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+/* ARTICLES */
+
+.article__title {
+    margin-bottom: 3rem;
+}
+
+.article__paragraph {
+    margin-bottom: 60vh;
+}
+
+/* FOOTER */
+
+.section--footer {
+    background-color: #333333;
+}
+
+.footer__header {
+    font-size: 1.2rem;
+    color: white;
+    padding: 7rem 8rem 2rem 8rem;
+    text-align: center;
+}
+
+.footer__button {
+    color: #444;
+    margin: 4rem;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.footer__logo {
+    font-size: 1.2rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.footer__line {
+    width: 42%;
+    margin: 1.5rem auto 2.5rem auto;
+}
+
+.footer__icons {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.footer__icons--item {
+    display: inline;
+}
+
+.footer__icons--icon {
+    width: 4rem;
+    margin: 0 1.6rem 3rem 1.6rem;
+    padding: 0.4rem;
+    transition: transform 0.2s;
+}
+
+.footer__icons--icon:hover {
+    transform: translateY(-12%);
+    cursor: pointer;
+}
+
+.footer__stamp {
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* MODAL */
+
+.modal {
+    width: 35rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--colour-primary);
+    padding: 2rem 5rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.modal__header {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.modal__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.modal__form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.modal__form input {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: 0.8px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.modal__form input:focus {
+    outline: 0.8px solid black;
+}
+
+.modal__form textarea {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border: 0.8px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2rem;
+    resize: none;
+}
+
+.modal__form textarea:focus {
+    outline: 0.8px solid black;
+}
+
+.modal__button {
+    color: #444;
+    width: 25%;
+    margin: 0.8rem auto;
+    transition: all 0.3s;
+}
+
+.btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    visibility: hidden;
     opacity: 0;
 }
 
-.nav__toggle .nav__burger--line3 {
-    transform: rotate(45deg) translate(-5px,-6px);
+/* PHONE RESPONSIVENESS */
+
+
+@media screen and (max-width: 545px) {
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    /* PHONE GENERAL ELEMENTS */
+    .section {
+        padding: 6rem 2.5rem 5rem 2.5rem;
+    }
+    
+    .section__title {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+
+    /* PHONE NAV */
+
+    .nav {
+        height: 6vh;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+
+    .nav__logo {
+        margin-left: 1.5rem;
+        font-size: 26px;
+    }
+
+    .nav__btn {
+        margin-right: 2rem;
+        padding: 0.75rem 2.4rem;
+    }
+
+    .nav__links--active {
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav__item {
+        margin: 5vh 0;
+    }
+
+    /* PHONE BLOG */
+
+    .blog__title {
+        margin-top: 2.5rem;
+    }
+
+    .blog__image {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        width: 20rem;
+    }
+
+    /* PHONE FOOTER */
+
+    .section--footer {
+        margin-top: 0;
+    }
+
+    .footer__logo {
+        margin-top: 2rem;
+        font-size: 32px;
+    }
+    
+    .footer__line {
+        margin: 0.5rem auto 1.5rem auto;
+    }
+
+    .footer__icons--icon {
+        width: 2.25rem;
+        margin: 0 1rem 0 1rem;
+        transition: none;
+    }
+    
+    .footer__icons--icon:hover {
+        transform: none;
+    }
+    
+    .footer__stamp {
+        font-size: 12px;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* PHONE MODAL */
+
+    .modal {
+        width: 72vw;
+        padding: 1rem 2rem;
+    }
+    
+    .modal__header {
+        font-size: 32px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .modal__form label {
+        font-size: 16px;
+    }
+    
+    .modal__form input {
+        font-size: 16px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .modal__form textarea {
+        font-size: 13px;
+    }
+    
+    .modal__button {
+        font-size: 14px;
+        width: 50%;
+        padding: 0.75rem 0;
+        margin: 0.6rem auto;
+    }
+    
+    .btn--close-modal {
+        font-size: 2.5rem;
+    }
+
+    .overlay {
+        backdrop-filter: blur(2px);
+        z-index: 10;
+    }
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (min-width: 545px) and (max-width: 1280px) {
+
+    /* TABLET GENERAL ELEMENTS */
+    .section {
+        padding: 6rem 3rem 5rem 3rem;
+    }
+    
+    .section__title {
+        font-size: 26px;
+        padding-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    /* TABLET NAV */
+
+    .nav {
+        width: 100%;
+        height: 10vh;
+        padding: 0;
+    }
+    
+    .nav__logo {
+        margin-left: 3rem;
+        font-size: 32px;
+    }
+    
+    .nav__links {
+        font-size: 20px;
+        margin-right: 1.4rem;
+    }
+    
+    .nav__item {
+        margin-left: 3rem;
+    }
 }

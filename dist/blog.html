@@ -30,25 +30,59 @@
                 <a class="nav__btn nav__link btn--show-modal">Contact</a>
             </li>
         </ul>
-
-        <div class="nav__burger">
-            <div class="nav__burger--line1"></div>
-            <div class="nav__burger--line2"></div>
-            <div class="nav__burger--line3"></div>
-        </div>
     </nav>
 
     <section class="section" id="section--blog">
-        <h2 class="section__title">BLOG</h2>
-        <p class="blog__text">Below are blogs about products I use often. I breakdown the reasoning behind their success
+        <h1 class="blog__title"><span class="highlight">Arul's Tech Blog</span></h1>
+        <p class="blog__text">Here I give my thoughts on products I use often. I breakdown the reasoning behind their
+            success
             and also
-            give my take on how the product can improve and not fall behind in today's rapidly changing society. Check
-            them out if you got a few minutes. I would love to hear your opinion!</p>
+            give my take on how the product can improve and not fall behind in today's rapidly changing society.
+            Check
+            some of the posts out if you got a few minutes. I would love to hear your opinion!</p>
         <div class="blog__images">
-            <a href="blog-youtube.html" target="_blank"><img class="blog__image" src="images/youtube-blog.png"></a>
-            <a href="blog-iphone.html" target="_blank"><img class="blog__image" src="images/iphone-blog.png"></a>
-            <a href="blog-veve.html" target="_blank"><img class="blog__image" src="images/veve-blog.png"></a>
+            <a href="blog-youtube.html"><img class="blog__image" src="images/youtube-blog.png"></a>
+            <a href="blog-iphone.html"><img class="blog__image" src="images/iphone-blog.png"></a>
+            <a href="blog-veve.html"><img class="blog__image" src="images/veve-blog.png"></a>
         </div>
     </section>
+
+    <section class="section--footer">
+        <h1 class="footer__logo">AA</h1>
+        <hr class="footer__line">
+        </div>
+        <div class="footer__icons">
+            <ul>
+                <li class="footer__icons--item"><a href="https://www.linkedin.com/in/arularora/" target="_blank"><img
+                            src="images/linkedin.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://github.com/ArulArora" target="_blank" id="git"><img
+                            src="images/github.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://www.facebook.com/arulxrora/" target="_blank"><img
+                            src="images/facebook.png" class="footer__icons--icon"></a></li>
+                <li class="footer__icons--item"><a href="https://www.instagram.com/arulxrora/" target="_blank"><img
+                            src="images/instagram.png" class="footer__icons--icon"></a></li>
+            </ul>
+        </div>
+        <p class="footer__stamp">Designed and developed by Arul Arora using HTML, CSS and JavaScript.</p>
+    </section>
+
+    <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">Let's talk!</h2>
+        <form class="modal__form" name="Contact" method="post" data-netlify="true">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" required>
+
+            <label for="Message">Message:</label>
+            <textarea name="Message" rows="6" maxlength="3000" placeholder="Hey! How's it going?" required></textarea>
+
+            <button type="submit" class="btn modal__button">Send Message</button>
+        </form>
+    </div>
+
+    <div class="overlay hidden"></div>
 
 </html>

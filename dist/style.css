@@ -360,32 +360,6 @@ body {
     margin: auto;
 }
 
-/* BLOG */
-#section--blog {
-    padding-bottom: 12rem;
-    background-color: var(--colour-tertiary);
-}
-
-.blog__text {
-    margin-bottom: 2.5rem;
-}
-
-.blog__images {
-    text-align: center;
-}
-
-.blog__image {
-    opacity: 100%;
-    width: 28rem;
-    margin: 0.2rem 0.3rem;
-    transition: opacity 0.3s;
-}
-
-.blog__image:hover {
-    opacity: 60%;
-    cursor: pointer;
-    transition: opacity 0.3s;
-}
 
 /* FOOTER */
 
