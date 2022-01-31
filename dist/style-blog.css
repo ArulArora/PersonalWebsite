@@ -396,6 +396,13 @@ body {
         font-size: 26px;
     }
 
+    .nav__back {
+        display: flex;
+        width: 25%;
+        margin-left: 1rem;
+        transition: all 0.3s;
+    }
+
     .nav__btn {
         margin-right: 2rem;
         padding: 0.75rem 2.4rem;
@@ -413,13 +420,14 @@ body {
     /* PHONE BLOG */
 
     .blog__title {
+        font-size: 1.75rem;
         margin-top: 2.5rem;
     }
 
     .blog__image {
         margin-top: 2rem;
         margin-bottom: 0;
-        width: 20rem;
+        width: 16rem;
     }
 
     /* PHONE FOOTER */
