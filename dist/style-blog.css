@@ -203,7 +203,7 @@ body {
 }
 
 .article__img {
-    width: 30%;
+    width: 35%;
 }
 
 /* FOOTER */
@@ -378,14 +378,13 @@ body {
 
     /* PHONE GENERAL ELEMENTS */
     .section {
-        padding: 6rem 2.5rem 5rem 2.5rem;
+        padding: 6rem 2.25rem 5rem 2.25rem;
     }
     
     .section__title {
         font-size: 18px;
         margin-bottom: 2rem;
     }
-
 
     /* PHONE NAV */
 
@@ -438,6 +437,12 @@ body {
         margin-top: 2rem;
         margin-bottom: 0;
         width: 16rem;
+    }
+
+    /* PHONE ARTICLES */
+
+    .article__img {
+        width: 75%;
     }
 
     /* PHONE FOOTER */
