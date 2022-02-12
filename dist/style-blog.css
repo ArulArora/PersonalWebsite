@@ -193,7 +193,17 @@ body {
 }
 
 .article__paragraph {
-    margin-bottom: 60vh;
+    margin-bottom: 2rem;
+}
+
+.article__imgs {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.article__img {
+    width: 30%;
 }
 
 /* FOOTER */
