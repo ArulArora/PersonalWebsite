@@ -39,7 +39,7 @@ body {
     font-weight: 1500;
     font-size: 1.6rem;
     margin-bottom: 3rem;
-    
+
     max-width: 90%;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 .nav__toggle .nav__burger--line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .nav__toggle .nav__burger--line2 {
@@ -168,7 +168,7 @@ body {
 }
 
 .nav__toggle .nav__burger--line3 {
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /*HEADER*/
@@ -259,7 +259,7 @@ body {
 .skills__skill {
     background-color: var(--colour-tertiary);
     display: grid;
-    grid-template-columns: 0.35fr 1fr;  
+    grid-template-columns: 0.35fr 1fr;
     gap: 6rem;
     margin: 5rem auto 5rem auto;
     transition: transform 1s, opacity 1s;
@@ -267,13 +267,11 @@ body {
 
 .skills__img {
     margin: 3rem 0 3rem auto;
-    width: 7rem;
-    border-radius: 50%;
-    border: 0.2rem solid var(--colour-accent);
+    width: 6rem;
 }
 
 .skills__text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     align-self: center;
 }
 
@@ -326,7 +324,7 @@ body {
 
 .experience__content--active {
     display: grid;
-    grid-template-columns: 1fr 0.55fr;  
+    grid-template-columns: 1fr 0.9fr;
     grid-template-rows: auto;
     justify-content: center;
 
@@ -335,29 +333,31 @@ body {
 }
 
 .experience__text {
-    text-align: justify;
     font-size: 1.1rem;
-    margin: auto auto 3rem 4rem;
+    margin: 2rem 2rem 4rem 4rem;
     grid-column: 1;
 }
 
-.experience__text li {
-    margin-top: 10px;
+.experience__text p {
+    text-align: justify;
 }
 
 .experience__title {
-    font-size: 1.3rem;
-    margin-bottom: 0.1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .experience__date {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1.6rem;
 }
 
 .experience__img {
-    width: 65%;
-    margin: auto;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
 
 
@@ -368,7 +368,7 @@ body {
 }
 
 .footer__header {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     padding: 7rem 8rem 2rem 8rem;
     text-align: center;
@@ -377,13 +377,13 @@ body {
 .footer__button {
     color: #444;
     margin: 4rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: all 0.3s;
 }
 
 .footer__logo {
     margin-top: 3rem;
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .footer__line {
@@ -402,7 +402,7 @@ body {
 }
 
 .footer__icons--icon {
-    width: 4rem;
+    width: 3rem;
     margin: 0 1.6rem 3rem 1.6rem;
     padding: 0.4rem;
     transition: transform 0.2s;
@@ -523,7 +523,7 @@ body {
     html {
         overflow-x: hidden;
     }
-    
+
     body {
         overflow-x: hidden;
     }
@@ -532,7 +532,7 @@ body {
     .section {
         padding: 6rem 2.5rem 5rem 2.5rem;
     }
-    
+
     .section__title {
         font-size: 18px;
         margin-bottom: 2rem;
@@ -547,7 +547,7 @@ body {
         position: fixed;
         width: 82%;
     }
-    
+
     .nav__links {
         position: fixed;
         right: 0;
@@ -618,14 +618,14 @@ body {
     .header__img {
         height: 100%;
         width: 100%;
-        grid-row: 2/2  ;
+        grid-row: 2/2;
     }
 
     .header__down img {
         margin-top: 0.75rem;
         width: 12.5%;
     }
-    
+
     /* PHONE ABOUT */
 
     .about__intro {
@@ -633,7 +633,7 @@ body {
         gap: 2rem;
         margin-bottom: 2rem;
     }
-    
+
     .about__text1 {
         font-size: 14px;
         line-height: 24px;
@@ -647,7 +647,7 @@ body {
     /* PHONE SKILLS */
 
     .skills__skill {
-        grid-template-columns: 0.4fr 1fr;  
+        grid-template-columns: 0.4fr 1fr;
         gap: 2rem;
         margin: 3rem auto;
     }
@@ -656,7 +656,7 @@ body {
         width: 4rem;
         margin: 2rem 0 2rem 1.6rem;
     }
-    
+
     .skills__text {
         font-size: 18px;
         align-self: center;
@@ -704,16 +704,16 @@ body {
         background-color: var(--colour-tertiary);
         padding-top: 3rem;
     }
-    
+
     .experience__content--active {
-        grid-template-columns: none;  
+        grid-template-columns: none;
     }
-    
+
     .experience__title {
         font-size: 16px;
         margin-bottom: 0.2rem;
     }
-    
+
     .experience__date {
         font-size: 14px;
         margin-bottom: 1.6rem;
@@ -726,29 +726,29 @@ body {
         padding: 0 2rem;
         text-align: left;
     }
-    
+
     .experience__img {
         margin: 2.5rem auto;
     }
 
     /* PHONE FOOTER */
-    
+
     .footer__header {
         font-size: 14px;
         padding: 4rem 2rem 2rem 2rem;
     }
-    
+
     .footer__button {
         margin: 3rem;
         font-size: 16px;
         padding: 0.9rem 1.6rem;
     }
-    
+
     .footer__logo {
         margin-top: 2rem;
         font-size: 32px;
     }
-    
+
     .footer__line {
         margin: 0.5rem auto 0 auto;
     }
@@ -758,11 +758,11 @@ body {
         margin: 0 1rem 0 1rem;
         transition: none;
     }
-    
+
     .footer__icons--icon:hover {
         transform: none;
     }
-    
+
     .footer__stamp {
         font-size: 12px;
         margin: 0 1rem;
@@ -776,32 +776,32 @@ body {
         width: 72vw;
         padding: 1rem 2rem;
     }
-    
+
     .modal__header {
         font-size: 32px;
         margin-bottom: 0.8rem;
     }
-    
+
     .modal__form label {
         font-size: 16px;
     }
-    
+
     .modal__form input {
         font-size: 16px;
         margin-bottom: 1.2rem;
     }
-    
+
     .modal__form textarea {
         font-size: 13px;
     }
-    
+
     .modal__button {
         font-size: 14px;
         width: 50%;
         padding: 0.75rem 0;
         margin: 0.6rem auto;
     }
-    
+
     .btn--close-modal {
         font-size: 2.5rem;
     }
@@ -820,7 +820,7 @@ body {
     .section {
         padding: 6rem 3rem 5rem 3rem;
     }
-    
+
     .section__title {
         font-size: 26px;
         padding-top: 4rem;
@@ -834,17 +834,17 @@ body {
         height: 12vh;
         padding: 0;
     }
-    
+
     .nav__logo {
         margin-left: 3rem;
         font-size: 32px;
     }
-    
+
     .nav__links {
         font-size: 20px;
         margin-right: 1.8rem;
     }
-    
+
     .nav__item {
         margin-left: 3rem;
     }
@@ -874,7 +874,7 @@ body {
         height: auto;
         width: 60vh;
         margin: auto;
-        grid-row: 2/2  ;
+        grid-row: 2/2;
     }
 
     .header__down img {
@@ -887,7 +887,7 @@ body {
         gap: 3rem;
         margin-bottom: 3rem;
     }
-    
+
     .about__text1 {
         font-size: 20px;
         line-height: 30px;
@@ -901,7 +901,7 @@ body {
     /* PHONE SKILLS */
 
     .skills__skill {
-        grid-template-columns: 0.25fr 1fr;  
+        grid-template-columns: 0.25fr 1fr;
         gap: 2rem;
         margin: 3rem auto;
     }
@@ -910,7 +910,7 @@ body {
         width: 4.5rem;
         margin: 2rem 0 2rem 4rem;
     }
-    
+
     .skills__text {
         font-size: 22px;
         align-self: center;
@@ -932,7 +932,7 @@ body {
     }
 
     .experience__content--active {
-        grid-template-columns: none;  
+        grid-template-columns: none;
     }
 
     .experience__text {
@@ -966,19 +966,19 @@ body {
     .footer__button {
         margin: 3rem;
     }
-    
+
     .footer__logo {
         margin-top: 1rem;
     }
-    
+
     .footer__line {
         margin: 1rem auto 0 auto;
     }
 
     .footer__icons--icon {
-        margin: -1.5rem 1.2rem 0 1.2rem;        
+        margin: -1.5rem 1.2rem 0 1.2rem;
     }
-    
+
     .footer__stamp {
         font-size: 16px;
         margin: 0 2rem;
